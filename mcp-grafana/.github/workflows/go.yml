@@ -1,0 +1,98 @@
+name: Go
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  lint:
+    name: Lint
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+
+      - name: Set up Go
+        uses: actions/setup-go@v5
+        with:
+          go-version: "1.24"
+          cache: true
+
+      - name: Run linters
+        run: make lint
+
+  test-unit:
+    name: Test Unit
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+
+      - name: Set up Go
+        uses: actions/setup-go@v5
+        with:
+          go-version: "1.24"
+          cache: true
+
+      - name: Run unit tests
+        run: make test-unit
+
+  test-integration:
+    name: Test Integration
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+
+      # Start the Grafana server.
+      # Do this early so that it can start up in time for the tests to run.
+      # We may need to add a wait here.
+      - name: Start docker-compose services
+        uses: hoverkraft-tech/compose-action@8be2d741e891ac9b8ac20825e6f3904149599925
+        with:
+          compose-file: "docker-compose.yaml"
+
+      - name: Set up Go
+        uses: actions/setup-go@v5
+        with:
+          go-version: "1.24"
+          cache: true
+
+      - name: Wait for Grafana server and Prometheus server to start and scrape
+        run: sleep 30
+
+      - name: Run integration tests
+        run: make test-integration
+
+  test-cloud:
+    name: Test Cloud
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+
+      - name: Set up Go
+        uses: actions/setup-go@v5
+        with:
+          go-version: "1.24"
+          cache: true
+
+      - name: Run cloud tests
+        env:
+          GRAFANA_URL: ${{ vars.CLOUD_GRAFANA_URL }}
+          GRAFANA_API_KEY: ${{ secrets.CLOUD_GRAFANA_API_KEY }}
+          ASSERTS_GRAFANA_URL: ${{ vars.ASSERTS_GRAFANA_URL }}
+          ASSERTS_GRAFANA_API_KEY: ${{ secrets.ASSERTS_GRAFANA_API_KEY }}
+        run: make test-cloud
