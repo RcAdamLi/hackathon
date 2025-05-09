@@ -13,8 +13,17 @@
 简要步骤：
 1. 启动服务：`docker-compose up -d`
 2. 导入示例数据：`cd kb && python import_data_to_kb.py sample_kb_data.json`
-3. 搜索知识库：`cd kb && python search_kb.py 关键词`
+3. 搜索知识库：
+   - 关键词搜索：`cd kb && python search_kb.py 关键词`
+   - 语义搜索：`cd kb && python semantic_search.py "您的自然语言查询"`
 4. 通过浏览器访问Kibana界面：http://localhost:5601
+
+### 知识库特点
+
+- **双重搜索能力**：支持传统关键词搜索和先进的语义搜索
+- **多格式数据**：支持JSON和CSV格式的数据导入
+- **向量存储**：使用Elasticsearch存储文本向量，支持相似度搜索
+- **可视化界面**：通过Kibana提供数据可视化和管理界面
 
 ## 2. 本地Wiki (MediaWiki)
 
