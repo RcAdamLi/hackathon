@@ -37,8 +37,36 @@ services:
     volumes:
       - mariadb-data:/var/lib/mysql
     restart: unless-stopped
+    
+  elasticsearch:
+    image: docker.elastic.co/elasticsearch/elasticsearch:7.14.0
+    container_name: kb_elasticsearch
+    environment:
+      - discovery.type=single-node
+      - "ES_JAVA_OPTS=-Xms512m -Xmx512m"
+      - xpack.security.enabled=false
+    volumes:
+      - elasticsearch-data:/usr/share/elasticsearch/data
+      - ./kb:/kb
+    ports:
+      - "9200:9200"
+    restart: unless-stopped
+    
+  kibana:
+    image: docker.elastic.co/kibana/kibana:7.14.0
+    container_name: kb_kibana
+    environment:
+      - ELASTICSEARCH_HOSTS=http://elasticsearch:9200
+    volumes:
+      - ./kb:/kb
+    ports:
+      - "5601:5601"
+    depends_on:
+      - elasticsearch
+    restart: unless-stopped
 
 volumes:
   grafana-storage:
   mediawiki-data:
-  mariadb-data: 
+  mariadb-data:
+  elasticsearch-data: 
