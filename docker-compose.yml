@@ -1,0 +1,44 @@
+version: '3'
+
+services:
+  grafana:
+    image: grafana/grafana
+    container_name: grafana_local
+    ports:
+      - "3000:3000"
+    volumes:
+      - grafana-storage:/var/lib/grafana
+    restart: unless-stopped
+    
+  mediawiki:
+    image: mediawiki:1.40
+    container_name: wiki_local
+    ports:
+      - "8080:80"
+    volumes:
+      - mediawiki-data:/var/www/html
+    environment:
+      - MEDIAWIKI_DB_HOST=database
+      - MEDIAWIKI_DB_NAME=wikidb
+      - MEDIAWIKI_DB_USER=wikiuser
+      - MEDIAWIKI_DB_PASSWORD=wikipass
+    depends_on:
+      - database
+    restart: unless-stopped
+    
+  database:
+    image: mariadb:10.9
+    container_name: wiki_db
+    environment:
+      - MARIADB_DATABASE=wikidb
+      - MARIADB_USER=wikiuser
+      - MARIADB_PASSWORD=wikipass
+      - MARIADB_ROOT_PASSWORD=rootpass
+    volumes:
+      - mariadb-data:/var/lib/mysql
+    restart: unless-stopped
+
+volumes:
+  grafana-storage:
+  mediawiki-data:
+  mariadb-data: 
