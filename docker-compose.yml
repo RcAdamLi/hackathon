@@ -1,15 +1,33 @@
 version: '3'
 
 services:
+  qdrant:
+    image: qdrant/qdrant:latest
+    container_name: qdrant_local
+    ports:
+      - "6333:6333"
+      - "6334:6334"
+    volumes:
+      - qdrant-storage:/qdrant/storage
+    restart: unless-stopped
+    environment:
+      - QDRANT_ALLOW_CORS=true
+      
   grafana:
-    image: grafana/grafana
+    image: grafana/grafana:latest
     container_name: grafana_local
     ports:
       - "3000:3000"
+    environment:
+      - GF_SECURITY_ADMIN_USER=admin
+      - GF_SECURITY_ADMIN_PASSWORD=admin
     volumes:
       - grafana-storage:/var/lib/grafana
-    restart: unless-stopped
-    
+    depends_on:
+      - mysql
+    networks:
+      - grafana-net
+
   mediawiki:
     image: mediawiki:1.40
     container_name: wiki_local
@@ -38,49 +56,29 @@ services:
       - mariadb-data:/var/lib/mysql
     restart: unless-stopped
     
-  elasticsearch:
-    image: docker.elastic.co/elasticsearch/elasticsearch:7.14.0
-    container_name: kb_elasticsearch
-    environment:
-      - discovery.type=single-node
-      - "ES_JAVA_OPTS=-Xms512m -Xmx512m"
-      - xpack.security.enabled=false
-    volumes:
-      - elasticsearch-data:/usr/share/elasticsearch/data
-      - ./kb:/kb
+  mysql:
+    image: mysql:8.0
+    container_name: grafana-mysql
     ports:
-      - "9200:9200"
-    restart: unless-stopped
-    
-  kibana:
-    image: docker.elastic.co/kibana/kibana:7.14.0
-    container_name: kb_kibana
+      - "3307:3306"
     environment:
-      - ELASTICSEARCH_HOSTS=http://elasticsearch:9200
+      - MYSQL_ROOT_PASSWORD=password
+      - MYSQL_DATABASE=grafana
+      - MYSQL_USER=grafana
+      - MYSQL_PASSWORD=grafana
     volumes:
-      - ./kb:/kb
-    ports:
-      - "5601:5601"
-    depends_on:
-      - elasticsearch
-    restart: unless-stopped
-    
-  qdrant:
-    image: qdrant/qdrant
-    container_name: kb_qdrant
-    ports:
-      - "6333:6333"  # REST API
-      - "6334:6334"  # GRPC API
-    volumes:
-      - qdrant-data:/qdrant/storage
-      - ./qdrant_kb:/qdrant_kb
-    environment:
-      - QDRANT__SERVICE__TELEMETRY_ENABLED=false
-    restart: unless-stopped
+      - mysql-storage:/var/lib/mysql
+    networks:
+      - grafana-net
+    command: --default-authentication-plugin=mysql_native_password
+
+networks:
+  grafana-net:
+    name: grafana-net
 
 volumes:
+  qdrant-storage:
   grafana-storage:
   mediawiki-data:
   mariadb-data:
-  elasticsearch-data:
-  qdrant-data: 
+  mysql-storage:

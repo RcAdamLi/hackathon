@@ -1,0 +1,785 @@
+[
+    {
+        "brand": "BYD",
+        "model": "Song PLUS",
+        "type": "Compact SUV",
+        "powertrain":
+        [
+            "PHEV (DM-i)",
+            "EV"
+        ],
+        "msrp_usd": "Approx. $19,000 - $25,300 (DM-i version)",
+        "available_colors":
+        [
+            "White",
+            "Black",
+            "Blue",
+            "Grey",
+            "Red"
+        ],
+        "country_of_manufacture":
+        [
+            "China"
+        ],
+        "mocked_discount_usd": "Approx. $500 - $1,500",
+        "key_selling_points":
+        {
+            "dm_i":
+            [
+                "Extremely low fuel consumption",
+                "Long combined range",
+                "Smooth driving experience"
+            ],
+            "ev":
+            [
+                "Zero emissions",
+                "Good acceleration"
+            ],
+            "common":
+            [
+                "Stylish exterior design",
+                "Rich intelligent technology features",
+                "Good market reputation (especially in China)"
+            ]
+        },
+        "example_trims_versions":
+        [
+            "DM-i versions with different pure electric ranges",
+            "EV versions with different ranges"
+        ],
+        "target_audience":
+        [
+            "Family users focusing on fuel economy and practicality",
+            "Young consumers receptive to new energy technology"
+        ],
+        "notes": "Primarily focused on the Chinese market. EV version pricing varies."
+    },
+    {
+        "brand": "Tesla",
+        "model": "Model Y",
+        "type": "Mid-size SUV",
+        "powertrain":
+        [
+            "EV"
+        ],
+        "msrp_usd": "Approx. $45,000 - $60,000 (varies by trim/region, e.g. US market)",
+        "available_colors":
+        [
+            "Pearl White Multi-Coat",
+            "Solid Black",
+            "Midnight Silver Metallic",
+            "Deep Blue Metallic",
+            "Red Multi-Coat"
+        ],
+        "country_of_manufacture":
+        [
+            "USA",
+            "China",
+            "Germany"
+        ],
+        "mocked_discount_usd": "Approx. $0 - $2,000 (demand and inventory dependent)",
+        "key_selling_points":
+        [
+            "Leading electric vehicle range and performance",
+            "Advanced Autopilot (driver-assistance system)",
+            "Access to Tesla's Supercharger network",
+            "Minimalist and tech-focused interior",
+            "Strong brand appeal"
+        ],
+        "example_trims_versions":
+        [
+            "Rear-Wheel Drive (RWD)",
+            "Long Range All-Wheel Drive (AWD)",
+            "Performance AWD"
+        ],
+        "target_audience":
+        [
+            "Tech-savvy consumers and early adopters of EVs",
+            "Families looking for a practical electric SUV"
+        ],
+        "notes": "A global best-seller. Price is indicative for major markets like the US."
+    },
+    {
+        "brand": "BYD",
+        "model": "Qin PLUS",
+        "type": "Compact Sedan",
+        "powertrain":
+        [
+            "PHEV (DM-i)",
+            "EV"
+        ],
+        "msrp_usd": "Approx. $11,200 - $25,200 (DM-i version)",
+        "available_colors":
+        [
+            "White",
+            "Black",
+            "Grey",
+            "Blue"
+        ],
+        "country_of_manufacture":
+        [
+            "China"
+        ],
+        "mocked_discount_usd": "Approx. $400 - $1,200",
+        "key_selling_points":
+        {
+            "dm_i":
+            [
+                "Revolutionary fuel economy",
+                "Extremely low running costs",
+                "Highly competitive pricing (in China)"
+            ],
+            "ev":
+            [
+                "Smooth and quiet electric driving"
+            ],
+            "common":
+            [
+                "High cost-performance ratio",
+                "BYD Blade Battery safety"
+            ]
+        },
+        "example_trims_versions":
+        [
+            "DM-i versions with different pure electric ranges",
+            "EV versions with different ranges"
+        ],
+        "target_audience":
+        [
+            "Economy-focused family users and ride-hailing drivers (China)",
+            "Budget-conscious consumers (China)"
+        ],
+        "notes": "Extremely popular in the Chinese market. EV version pricing varies."
+    },
+    {
+        "brand": "Geely",
+        "model": "Xingyue L (Star L)",
+        "type": "Compact SUV (bordering on Mid-size)",
+        "powertrain":
+        [
+            "Petrol",
+            "Hybrid (Thor Hi-X)"
+        ],
+        "msrp_usd": "Approx. $19,200 - $25,900 (Petrol version)",
+        "available_colors":
+        [
+            "Black",
+            "White",
+            "Grey",
+            "Blue",
+            "Green"
+        ],
+        "country_of_manufacture":
+        [
+            "China"
+        ],
+        "mocked_discount_usd": "Approx. $600 - $1,800",
+        "key_selling_points":
+        [
+            "Grand exterior design and spacious interior",
+            "High-quality interior and tech features",
+            "Good driving dynamics (CMA platform)"
+        ],
+        "example_trims_versions":
+        [
+            "2.0TD DCT EVO 2WD/4WD (Petrol)",
+            "Thor Hi-X (Hybrid) versions"
+        ],
+        "target_audience":
+        [
+            "Family users valuing space, design, and tech (China)",
+            "Consumers seeking high-quality domestic Chinese SUVs"
+        ],
+        "notes": "A key model for Geely in China. Hybrid versions priced differently."
+    },
+    {
+        "brand": "Volkswagen",
+        "model": "Lavida",
+        "type": "Compact Sedan",
+        "powertrain":
+        [
+            "Petrol"
+        ],
+        "msrp_usd": "Approx. $11,200 - $21,300",
+        "available_colors":
+        [
+            "White",
+            "Black",
+            "Silver",
+            "Red",
+            "Blue"
+        ],
+        "country_of_manufacture":
+        [
+            "China"
+        ],
+        "mocked_discount_usd": "Approx. $500 - $1,500",
+        "key_selling_points":
+        [
+            "Strong Volkswagen brand reputation in China",
+            "Balanced product, durable and reliable",
+            "Spacious for its segment",
+            "Economical fuel consumption"
+        ],
+        "example_trims_versions":
+        [
+            "1.5L Naturally Aspirated versions",
+            "1.5T (300TSI) Turbocharged versions"
+        ],
+        "target_audience":
+        [
+            "Family users seeking reliability and practicality (China)",
+            "First-time car buyers valuing brand reputation (China)"
+        ],
+        "notes": "A best-selling sedan specifically for the Chinese market."
+    },
+    {
+        "brand": "Nissan",
+        "model": "Sylphy (Sentra in some markets)",
+        "type": "Compact Sedan",
+        "powertrain":
+        [
+            "Petrol",
+            "e-POWER Hybrid (selected markets)"
+        ],
+        "msrp_usd": "Approx. $21,000 (starting, e.g., US Sentra)",
+        "available_colors":
+        [
+            "White",
+            "Black",
+            "Silver",
+            "Grey",
+            "Red",
+            "Blue"
+        ],
+        "country_of_manufacture":
+        [
+            "China",
+            "Mexico",
+            "USA",
+            "Thailand",
+            "Japan"
+        ],
+        "mocked_discount_usd": "Approx. $1,000 - $2,500",
+        "key_selling_points":
+        [
+            "Comfortable ride and seats",
+            "Good fuel economy",
+            "Reliable technology",
+            "Spacious interior for a compact"
+        ],
+        "example_trims_versions":
+        [
+            "S, SV, SR (US Sentra)",
+            "Various trims in other markets for Sylphy/Sentra"
+        ],
+        "target_audience":
+        [
+            "Family users prioritizing comfort and fuel economy",
+            "Consumers seeking a reliable compact sedan"
+        ],
+        "notes": "Popular globally under Sylphy or Sentra names. Price is indicative for US Sentra."
+    },
+    {
+        "brand": "Honda",
+        "model": "CR-V",
+        "type": "Compact SUV / Crossover",
+        "powertrain":
+        [
+            "Petrol",
+            "Hybrid (e:HEV)"
+        ],
+        "msrp_usd": "Approx. $30,000 (starting, e.g., US market)",
+        "available_colors":
+        [
+            "White",
+            "Black",
+            "Grey",
+            "Silver",
+            "Blue",
+            "Red"
+        ],
+        "country_of_manufacture":
+        [
+            "USA",
+            "Canada",
+            "China",
+            "Japan",
+            "Thailand"
+        ],
+        "mocked_discount_usd": "Approx. $1,000 - $2,500",
+        "key_selling_points":
+        [
+            "Versatility, reliability, and strong resale value",
+            "Spacious interior and cargo capacity",
+            "Available All-Wheel Drive (AWD)",
+            "Efficient hybrid options"
+        ],
+        "example_trims_versions":
+        [
+            "LX, EX, Sport Hybrid, EX-L, Sport Touring Hybrid (US)"
+        ],
+        "target_audience":
+        [
+            "Families needing a reliable compact SUV",
+            "Individuals seeking comfort, efficiency, and utility"
+        ],
+        "notes": "A top-selling compact SUV globally. PHEV available in some markets."
+    },
+    {
+        "brand": "Xiaomi Auto",
+        "model": "SU7",
+        "type": "Mid-to-Large Size Electric Sedan",
+        "powertrain":
+        [
+            "EV"
+        ],
+        "msrp_usd": "Approx. $30,200 - $42,000",
+        "available_colors":
+        [
+            "Aqua Blue",
+            "Verdant Green",
+            "Meteor Blue",
+            "Pearl White",
+            "Basalt Gray",
+            "Obsidian Black"
+        ],
+        "country_of_manufacture":
+        [
+            "China"
+        ],
+        "mocked_discount_usd": "Approx. $0 - $1,000 (new model, high demand)",
+        "key_selling_points":
+        [
+            "Strong Xiaomi brand influence (China)",
+            "Competitive performance and range for its price (China)",
+            "Advanced intelligent cockpit and ADAS",
+            "Stylish exterior design"
+        ],
+        "example_trims_versions":
+        [
+            "Standard Edition",
+            "Pro Edition",
+            "Max Edition"
+        ],
+        "target_audience":
+        [
+            "Young consumers and Xiaomi ecosystem users (China)",
+            "Users seeking trendy tech and performance EVs (China)"
+        ],
+        "notes": "A new entrant generating significant buzz in China."
+    },
+    {
+        "brand": "Toyota",
+        "model": "Corolla",
+        "type": "Compact Sedan / Hatchback",
+        "powertrain":
+        [
+            "Petrol",
+            "Hybrid"
+        ],
+        "msrp_usd": "Approx. $22,000 (starting, sedan, US market)",
+        "available_colors":
+        [
+            "White",
+            "Black",
+            "Silver",
+            "Celestite",
+            "Blueprint",
+            "Ruby Flare Pearl"
+        ],
+        "country_of_manufacture":
+        [
+            "Japan",
+            "USA",
+            "China",
+            "Turkey",
+            "Brazil",
+            "Thailand",
+            "UK"
+        ],
+        "mocked_discount_usd": "Approx. $500 - $2,000",
+        "key_selling_points":
+        [
+            "Reputation for reliability and durability",
+            "Excellent fuel efficiency (especially hybrid)",
+            "Good resale value",
+            "Comprehensive safety features"
+        ],
+        "example_trims_versions":
+        [
+            "L, LE, XLE (Sedan US)",
+            "SE, XSE (Sportier US)",
+            "Hybrid versions"
+        ],
+        "target_audience":
+        [
+            "Budget-conscious individuals and families",
+            "Commuters",
+            "First-time car buyers"
+        ],
+        "notes": "Globally best-selling car. Trims/body styles vary."
+    },
+    {
+        "brand": "Toyota",
+        "model": "RAV4",
+        "type": "Compact SUV / Crossover",
+        "powertrain":
+        [
+            "Petrol",
+            "Hybrid",
+            "PHEV (RAV4 Prime)"
+        ],
+        "msrp_usd": "Approx. $29,000 (starting, US market)",
+        "available_colors":
+        [
+            "White",
+            "Black",
+            "Silver Sky Metallic",
+            "Magnetic Gray Metallic",
+            "Blueprint",
+            "Ruby Flare Pearl"
+        ],
+        "country_of_manufacture":
+        [
+            "Japan",
+            "USA",
+            "Canada",
+            "China"
+        ],
+        "mocked_discount_usd": "Approx. $1,000 - $2,500",
+        "key_selling_points":
+        [
+            "Versatility and practicality",
+            "Available AWD",
+            "Strong fuel economy (especially hybrid)",
+            "Comfortable ride, spacious interior"
+        ],
+        "example_trims_versions":
+        [
+            "LE, XLE, XLE Premium, Limited, Adventure, TRD Off-Road (US)",
+            "Hybrid trims, Prime (PHEV) trims"
+        ],
+        "target_audience":
+        [
+            "Families needing a versatile SUV",
+            "Individuals with active lifestyles"
+        ],
+        "notes": "Globally top-selling SUV."
+    },
+    {
+        "brand": "Ford",
+        "model": "F-Series (e.g., F-150)",
+        "type": "Full-size Pickup Truck",
+        "powertrain":
+        [
+            "Petrol (V6, V8)",
+            "Hybrid",
+            "EV (Lightning)"
+        ],
+        "msrp_usd": "Approx. $37,000 (starting F-150 XL, US market)",
+        "available_colors":
+        [
+            "Oxford White",
+            "Agate Black",
+            "Iconic Silver",
+            "Rapid Red",
+            "Antimatter Blue"
+        ],
+        "country_of_manufacture":
+        [
+            "USA"
+        ],
+        "mocked_discount_usd": "Approx. $1,500 - $5,000 (varies by trim/region)",
+        "key_selling_points":
+        [
+            "Best-selling truck in the US",
+            "Wide range of configurations and capabilities",
+            "Durable and built for work",
+            "Innovative features"
+        ],
+        "example_trims_versions":
+        [
+            "F-150: XL, XLT, Lariat, King Ranch, Platinum, Limited, Raptor",
+            "Super Duty series for heavier tasks"
+        ],
+        "target_audience":
+        [
+            "Contractors and tradespeople",
+            "Individuals needing high towing/hauling capacity (North America)"
+        ],
+        "notes": "Dominant in North America. Diesel available in Super Duty."
+    },
+    {
+        "brand": "Volkswagen",
+        "model": "Golf",
+        "type": "Compact Car / Hatchback",
+        "powertrain":
+        [
+            "Petrol (TSI)",
+            "Mild Hybrid (eTSI)",
+            "PHEV (GTE)"
+        ],
+        "msrp_usd": "Approx. $27,000 (starting, converted from EUR)",
+        "available_colors":
+        [
+            "Pure White",
+            "Deep Black Pearl",
+            "Dolphin Grey Metallic",
+            "Lime Yellow Metallic",
+            "Kings Red Metallic"
+        ],
+        "country_of_manufacture":
+        [
+            "Germany",
+            "China",
+            "Mexico (previously)"
+        ],
+        "mocked_discount_usd": "Approx. $1,000 - $3,000 (Europe focus)",
+        "key_selling_points":
+        [
+            "Iconic European hatchback",
+            "High-quality interior for its class",
+            "Refined driving dynamics",
+            "Performance GTI and R versions"
+        ],
+        "example_trims_versions":
+        [
+            "Life, Style, R-Line (Europe)",
+            "GTI, GTE, R"
+        ],
+        "target_audience":
+        [
+            "European drivers seeking a versatile compact",
+            "Young professionals, small families (Europe)"
+        ],
+        "notes": "A benchmark in Europe. Diesel less common now."
+    },
+    {
+        "brand": "Honda",
+        "model": "Civic",
+        "type": "Compact Car (Sedan / Hatchback)",
+        "powertrain":
+        [
+            "Petrol",
+            "Hybrid (e:HEV)",
+            "Performance Petrol (Si, Type R)"
+        ],
+        "msrp_usd": "Approx. $24,000 (starting, sedan, US market)",
+        "available_colors":
+        [
+            "Crystal Black Pearl",
+            "Lunar Silver Metallic",
+            "Aegean Blue Metallic",
+            "Rallye Red",
+            "Platinum White Pearl"
+        ],
+        "country_of_manufacture":
+        [
+            "USA",
+            "Canada",
+            "Japan",
+            "China",
+            "UK (previously)",
+            "Thailand"
+        ],
+        "mocked_discount_usd": "Approx. $500 - $2,000",
+        "key_selling_points":
+        [
+            "Reliability, fuel efficiency, fun-to-drive character",
+            "Sporty styling and handling",
+            "Practical sedan/hatchback forms",
+            "Strong resale value"
+        ],
+        "example_trims_versions":
+        [
+            "LX, Sport, EX, Touring (US)",
+            "Si, Type R"
+        ],
+        "target_audience":
+        [
+            "Younger buyers and commuters",
+            "Those seeking a reliable, sporty compact"
+        ],
+        "notes": "Globally recognized. Hybrid often standard in Europe."
+    },
+    {
+        "brand": "Hyundai",
+        "model": "Tucson",
+        "type": "Compact SUV / Crossover",
+        "powertrain":
+        [
+            "Petrol",
+            "Hybrid",
+            "PHEV"
+        ],
+        "msrp_usd": "Approx. $28,000 (starting, US market)",
+        "available_colors":
+        [
+            "Phantom Black",
+            "Shimmering Silver",
+            "Deep Sea",
+            "Amazon Gray",
+            "Calypso Red",
+            "Intense Blue"
+        ],
+        "country_of_manufacture":
+        [
+            "South Korea",
+            "USA",
+            "Czech Republic",
+            "China"
+        ],
+        "mocked_discount_usd": "Approx. $1,000 - $3,000",
+        "key_selling_points":
+        [
+            "Distinctive modern styling",
+            "Well-equipped with tech and safety",
+            "Comfortable ride, spacious cabin",
+            "Competitive warranty"
+        ],
+        "example_trims_versions":
+        [
+            "SE, SEL, N Line, Limited, XRT (US)",
+            "Hybrid and PHEV trims"
+        ],
+        "target_audience":
+        [
+            "Young families, individuals seeking a stylish compact SUV",
+            "Value-conscious buyers"
+        ],
+        "notes": "Strong global sales. Styling is a key differentiator."
+    },
+    {
+        "brand": "Chevrolet",
+        "model": "Silverado (e.g., 1500)",
+        "type": "Full-size Pickup Truck",
+        "powertrain":
+        [
+            "Petrol (Turbo I4, V8)",
+            "Diesel (Duramax I6)"
+        ],
+        "msrp_usd": "Approx. $38,000 (starting 1500 WT, US market)",
+        "available_colors":
+        [
+            "Summit White",
+            "Black",
+            "Silver Ice Metallic",
+            "Red Hot",
+            "Northsky Blue Metallic"
+        ],
+        "country_of_manufacture":
+        [
+            "USA",
+            "Mexico",
+            "Canada"
+        ],
+        "mocked_discount_usd": "Approx. $2,000 - $6,000 (varies by trim/incentives)",
+        "key_selling_points":
+        [
+            "Strong towing and hauling",
+            "Variety of engine choices",
+            "Comfortable and spacious cabin",
+            "Advanced trailering technology"
+        ],
+        "example_trims_versions":
+        [
+            "1500: WT, Custom, LT, RST, LTZ, High Country, ZR2",
+            "HD series for heavier duty"
+        ],
+        "target_audience":
+        [
+            "Tradespeople, businesses (North America)",
+            "Individuals needing robust towing/hauling (North America)"
+        ],
+        "notes": "Major competitor in North American truck market."
+    },
+    {
+        "brand": "Toyota",
+        "model": "Hilux",
+        "type": "Mid-size Pickup Truck",
+        "powertrain":
+        [
+            "Diesel",
+            "Petrol (some markets)"
+        ],
+        "msrp_usd": "Approx. $28,000 - $45,000 (indicative starting range in major markets like Australia/Thailand, highly variable)",
+        "available_colors":
+        [
+            "Glacier White",
+            "Eclipse Black",
+            "Silver Sky",
+            "Nebula Blue",
+            "Feverish Red"
+        ],
+        "country_of_manufacture":
+        [
+            "Thailand",
+            "South Africa",
+            "Argentina",
+            "Japan",
+            "Pakistan"
+        ],
+        "mocked_discount_usd": "Approx. $1,000 - $3,000 (market dependent)",
+        "key_selling_points":
+        [
+            "Legendary toughness, durability, off-road capability",
+            "Global presence, proven reliability",
+            "Strong diesel performance",
+            "Versatile workhorse and lifestyle vehicle"
+        ],
+        "example_trims_versions":
+        [
+            "WorkMate, SR, SR5, Rogue, GR Sport (Australia)",
+            "Active, Icon, Invincible (UK)"
+        ],
+        "target_audience":
+        [
+            "Businesses needing reliable mid-size truck (global ex-NA)",
+            "Off-road enthusiasts, agricultural users"
+        ],
+        "notes": "Globally best-selling pickup outside N. America. Not sold in US/Canada."
+    },
+    {
+        "brand": "Dacia",
+        "model": "Sandero (including Stepway)",
+        "type": "Supermini / Subcompact Car",
+        "powertrain":
+        [
+            "Petrol",
+            "LPG (Bi-Fuel)"
+        ],
+        "msrp_usd": "Approx. $13,000 (starting, converted from EUR)",
+        "available_colors":
+        [
+            "Glacier White",
+            "Iron Blue",
+            "Fusion Red",
+            "Comet Grey",
+            "Pearl Black"
+        ],
+        "country_of_manufacture":
+        [
+            "Romania",
+            "Morocco"
+        ],
+        "mocked_discount_usd": "Approx. $300 - $1,000 (low margin vehicle)",
+        "key_selling_points":
+        [
+            "Exceptional affordability",
+            "Spacious interior for its class",
+            "Low running costs (especially LPG)",
+            "Stepway version for crossover styling"
+        ],
+        "example_trims_versions":
+        [
+            "Essential, Expression, Extreme (Europe)"
+        ],
+        "target_audience":
+        [
+            "Budget-conscious buyers in Europe",
+            "First-time car buyers (Europe)"
+        ],
+        "notes": "Best-selling car in Europe due to aggressive pricing."
+    }
+]
