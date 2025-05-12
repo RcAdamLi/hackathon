@@ -18,7 +18,7 @@ def main():
         collection_names = [c.name for c in collections_info.collections]
         print(f"服务器上的集合: {collection_names}")
         
-        collection_name = "cars"
+        collection_name = "knowledge_base"
         
         if collection_name not in collection_names:
             print(f"警告: 集合 '{collection_name}' 不存在")
@@ -70,7 +70,7 @@ def main():
     except Exception as e:
         print(f"连接Qdrant时出错: {e}")
 
-def search_qdrant(client, model, query_text, collection_name="cars", limit=5):
+def search_qdrant(client, model, query_text, collection_name="knowledge_base", limit=5):
     """在Qdrant中搜索"""
     # 生成查询文本的嵌入向量
     query_vector = model.encode(query_text).tolist()
