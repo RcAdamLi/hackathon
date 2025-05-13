@@ -52,7 +52,7 @@ services:
     image: mediawiki:1.40
     container_name: wiki_local
     ports:
-      - "8080:80"
+      - "8111:80"
     volumes:
       - mediawiki-data:/var/www/html
     environment:
